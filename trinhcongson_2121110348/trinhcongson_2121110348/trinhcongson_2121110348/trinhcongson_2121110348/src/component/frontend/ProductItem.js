@@ -35,9 +35,9 @@ function ProductItem(props) {
                     </h3>
                 </div>
                 <div className="link-defail">
-                    <h3 className="text-primary fs-6">
+                    <h3 className="text-danger fs-4">
                         <button type="button" class="btn btn-cart" to="/gio-hang">
-                            <Link to={"/gio-hang"}>
+                            <Link to={"/gio-hang"} className="text-white">
                                 Thêm Vào Giỏ
                             </Link>
                         </button>
