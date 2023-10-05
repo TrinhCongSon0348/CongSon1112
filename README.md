@@ -8,5 +8,5 @@
 ## Thời gian thực hiện: 
 - Tuàn 1: Từ 7/9 đến 14/9
 - Tuần 2: Từ 15/9 đến 28/9: Giao diện trang chủ, trang quản lý, trang sản phẩm, chính sách người dùng, giới thiệu
-- Tuần 3: Từ 28/9 đến 10/5: Trang giỏ hàng, trang đăng ký tài khoản
+- Tuần 3: Từ 28/9 đến 10/5: trang đăng nhập, đăng ký tài khoản
 
