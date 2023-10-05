@@ -11,6 +11,7 @@ import ChinhSachDoiTra from "../pages/frontend/ChinhSachDoiTra";
 import ChinhSachBaoHanh from "../pages/frontend/ChinhSachBaoHanh";
 import GioHang from "../pages/frontend/GioHang";
 import DangKyTaiKhoan from "../pages/frontend/DangKyTaiKhoan";
+import DangNhap from "../pages/frontend/DangNhap";
 
 const RouterPublic=[
     {path:"/", component:Home},
@@ -25,7 +26,8 @@ const RouterPublic=[
     {path:"/thuong-hieu/:slug", component:ProductBrand},
     {path:"/lien-he",component:Contact},
     {path:"/gio-hang",component:GioHang},
-    {path:"/dang-ky",component:DangKyTaiKhoan}
+    {path:"/dang-ky",component:DangKyTaiKhoan},
+    {path:"/dang-nhap",component:DangNhap}
 
 ]
 export default RouterPublic;

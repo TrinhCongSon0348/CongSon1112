@@ -13,11 +13,11 @@ function Header() {
                     TÌM KIẾM
                 </div>
                 <div className="col-md-2" >
-                    <Link className="dropdown-item" to="/dang-nhap">Dang nhap</Link></div>
+                    <Link className="dropdown-item" to="/dang-nhap">Đăng Nhập</Link></div>
                 <div className="col-md-2" >
-                    <Link className="dropdown-item" to="/dang-ky">Dang ky</Link></div>
+                    <Link className="dropdown-item" to="/dang-ky">Đăng Ký</Link></div>
                 <div className="col-md-1">
-                    <Link className="dropdown-item" to="/gio-hang">Gio hang
+                    <Link className="dropdown-item" to="/gio-hang">Giỏ Hàng
                     <i class="fa fa-shopping-bag" aria-hidden="true"></i></Link>
                 </div>
             </div>

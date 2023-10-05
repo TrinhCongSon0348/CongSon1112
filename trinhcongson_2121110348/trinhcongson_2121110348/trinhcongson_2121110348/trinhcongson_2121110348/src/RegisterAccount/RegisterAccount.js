@@ -65,7 +65,7 @@ function RegisterAccount() {
     return (
         <div className="register-page">
             <div className="register-form-container">
-                <h1 className="title">Dang Ky Tai Khoan</h1>
+                <h1 className="title">Đăng Ký Tài Khoản</h1>
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="first-name" className="form-label">
@@ -153,7 +153,7 @@ function RegisterAccount() {
                     </div>
 
                     <button type="submit" className="submit-btn">
-                        Dang ky
+                        Đăng Ký
                     </button>
                 </form>
             </div>

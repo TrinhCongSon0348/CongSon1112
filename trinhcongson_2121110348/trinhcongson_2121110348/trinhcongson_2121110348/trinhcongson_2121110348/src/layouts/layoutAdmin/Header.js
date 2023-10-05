@@ -36,15 +36,6 @@ function Header() {
                             <form className="d-flex" role="search">
                                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                                 <button className="btn btn-outline-success" type="submit">Search
-                                    {/* <form action="/search" class="ultimate-search frmSearch"/>
-							<input type="hidden" name="type" value="product">
-							<input type="text" name="q" placeholder="Tìm kiếm..." autocomplete="off">
-							<input type="hidden" class="collection_id" value="(collectionid:product>=0)">
-							<input type="hidden" class="collection_handle" value="all">
-							<input type="hidden" class="collection_name" value="all">
-							<ul class="search-results" id="search-results" style="display: none;">
-							</ul>
-						</form> */}
                                 </button>
                             </form>
                         </div>
