@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 28, 2023 at 11:15 AM
+-- Generation Time: Oct 11, 2023 at 02:09 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -35,6 +35,7 @@ CREATE TABLE `db_brand` (
   `sort_order` int(10) UNSIGNED NOT NULL DEFAULT 0,
   `metakey` varchar(255) NOT NULL,
   `metadesc` varchar(255) NOT NULL,
+  `description` varchar(1000) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `created_by` int(10) UNSIGNED NOT NULL DEFAULT 1,
@@ -46,22 +47,22 @@ CREATE TABLE `db_brand` (
 -- Dumping data for table `db_brand`
 --
 
-INSERT INTO `db_brand` (`id`, `name`, `slug`, `image`, `sort_order`, `metakey`, `metadesc`, `created_at`, `updated_at`, `created_by`, `updated_by`, `status`) VALUES
-(1, 'Lamborghini Veneno', 'xe-1', 'hinh1.jpg', 0, 'efvcwe', 'wefvqef', NULL, NULL, 1, NULL, 1),
-(2, 'W Motors Lykan Hypersport', 'xe-2', 'hinh2.jpg', 0, 'efvcwe', 'wefvqef', NULL, NULL, 1, NULL, 1),
-(3, 'Bugatti Veyron Vivere By Mansory', 'xe-3', 'hinh3.jpg', 0, 'efvcwe', 'wefvqef', NULL, NULL, 1, NULL, 1),
-(4, 'Bugatti Chiron Sport', 'xe-4', 'hinh4.jpg', 0, 'efvcwe', 'wefvqef', NULL, NULL, 1, NULL, 1),
-(5, 'Ferrari Sergio Pininfarina', 'xe-5', 'hinh5.jpg', 0, 'efvcwe', 'wefvqef', NULL, NULL, 1, NULL, 1),
-(6, 'Ford Thunderbird', 'xe-6', 'hinh6.jpg', 0, 'efvcwe', 'wefvqef', NULL, NULL, 1, NULL, 1),
-(7, 'Maserati A6GCS/53', 'xe-7', 'hinh7.jpg', 0, 'efvcwe', 'wefvqef', NULL, NULL, 1, NULL, 1),
-(8, 'BMW 507', 'xe-8', 'hinh8.jpg', 0, 'efvcwe', 'wefvqef', NULL, NULL, 1, NULL, 1),
-(9, 'Chevrolet Corvette (C1)', 'xe-9', 'hinh9.jpg', 1, 'vsvs', 'sdvsdvsv', '2023-06-30 00:36:43', '2023-06-30 00:36:43', 1, NULL, 1),
-(10, 'Dodge Charger 1969', 'xe-10', 'hinh10.jpg', 0, 'efvcwe', 'wefvqef', NULL, NULL, 1, NULL, 1),
-(11, 'Rolls-Royce Phantom VIII', 'xe-11', 'hinh11.jpg', 0, 'efvcwe', 'wefvqef', NULL, NULL, 1, NULL, 1),
-(12, 'Bentley Mulsanne', 'xe-12', 'hinh12.jpg', 0, 'efvcwe', 'wefvqef', NULL, NULL, 1, NULL, 1),
-(13, 'Maybach S650', 'xe-13', 'hinh13.jpg', 0, 'efvcwe', 'wefvqef', NULL, NULL, 1, NULL, 1),
-(14, 'Range Rover SV Autobiography', 'xe-14', 'hinh14.jpg', 0, 'efvcwe', 'wefvqef', NULL, NULL, 1, NULL, 1),
-(15, 'Rolls-Royce Cullinan', 'xe-15', 'hinh15.jpg', 1, 'vsvs', 'sdvsdvsv', '2023-06-30 00:36:43', '2023-06-30 00:36:43', 1, NULL, 1);
+INSERT INTO `db_brand` (`id`, `name`, `slug`, `image`, `sort_order`, `metakey`, `metadesc`, `description`, `created_at`, `updated_at`, `created_by`, `updated_by`, `status`) VALUES
+(1, 'Lamborghini Veneno', 'xe-1', 'hinh1.jpg', 0, 'efvcwe', 'wefvqef', '', NULL, NULL, 1, NULL, 1),
+(2, 'W Motors Lykan Hypersport', 'xe-2', 'hinh2.jpg', 0, 'efvcwe', 'wefvqef', '', NULL, NULL, 1, NULL, 1),
+(3, 'Bugatti Veyron Vivere By Mansory', 'xe-3', 'hinh3.jpg', 0, 'efvcwe', 'wefvqef', '', NULL, NULL, 1, NULL, 1),
+(4, 'Bugatti Chiron Sport', 'xe-4', 'hinh4.jpg', 0, 'efvcwe', 'wefvqef', '', NULL, NULL, 1, NULL, 1),
+(5, 'Ferrari Sergio Pininfarina', 'xe-5', 'hinh5.jpg', 0, 'efvcwe', 'wefvqef', '', NULL, NULL, 1, NULL, 1),
+(6, 'Ford Thunderbird', 'xe-6', 'hinh6.jpg', 0, 'efvcwe', 'wefvqef', '', NULL, NULL, 1, NULL, 1),
+(7, 'Maserati A6GCS/53', 'xe-7', 'hinh7.jpg', 0, 'efvcwe', 'wefvqef', '', NULL, NULL, 1, NULL, 1),
+(8, 'BMW 507', 'xe-8', 'hinh8.jpg', 0, 'efvcwe', 'wefvqef', '', NULL, NULL, 1, NULL, 1),
+(9, 'Chevrolet Corvette (C1)', 'xe-9', 'hinh9.jpg', 1, 'vsvs', 'sdvsdvsv', '', '2023-06-30 00:36:43', '2023-06-30 00:36:43', 1, NULL, 1),
+(10, 'Dodge Charger 1969', 'xe-10', 'hinh10.jpg', 0, 'efvcwe', 'wefvqef', '', NULL, NULL, 1, NULL, 1),
+(11, 'Rolls-Royce Phantom VIII', 'xe-11', 'hinh11.jpg', 0, 'efvcwe', 'wefvqef', '', NULL, NULL, 1, NULL, 1),
+(12, 'Bentley Mulsanne', 'xe-12', 'hinh12.jpg', 0, 'efvcwe', 'wefvqef', '', NULL, NULL, 1, NULL, 1),
+(13, 'Maybach S650', 'xe-13', 'hinh13.jpg', 0, 'efvcwe', 'wefvqef', '', NULL, NULL, 1, NULL, 1),
+(14, 'Range Rover SV Autobiography', 'xe-14', 'hinh14.jpg', 0, 'efvcwe', 'wefvqef', '', NULL, NULL, 1, NULL, 1),
+(15, 'Rolls-Royce Cullinan', 'xe-15', 'hinh15.jpg', 1, 'vsvs', 'sdvsdvsv', '', '2023-06-30 00:36:43', '2023-06-30 00:36:43', 1, NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -78,6 +79,7 @@ CREATE TABLE `db_category` (
   `sort_order` int(10) UNSIGNED NOT NULL DEFAULT 0,
   `metakey` varchar(255) NOT NULL,
   `metadesc` varchar(255) NOT NULL,
+  `description` varchar(1000) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `created_by` int(10) UNSIGNED NOT NULL DEFAULT 1,
@@ -89,10 +91,34 @@ CREATE TABLE `db_category` (
 -- Dumping data for table `db_category`
 --
 
-INSERT INTO `db_category` (`id`, `name`, `slug`, `image`, `parent_id`, `sort_order`, `metakey`, `metadesc`, `created_at`, `updated_at`, `created_by`, `updated_by`, `status`) VALUES
-(1, 'Mẫu xe sang trọng', 'sang-trong', 'hinh1.jpg', 0, 5, 'dasfd', 'dasf', NULL, '2023-06-30 00:37:33', 1, 1, 1),
-(2, 'Mẫu xe thể thao', 'the-thao', 'hinh2.jpg', 0, 4, 'effe', 'wefwef', NULL, NULL, 1, NULL, 1),
-(3, 'Mẫu xe cổ điển', 'co-dien', 'hinh3.jpg', 0, 5, 'wefw', 'dasf', NULL, NULL, 1, NULL, 1);
+INSERT INTO `db_category` (`id`, `name`, `slug`, `image`, `parent_id`, `sort_order`, `metakey`, `metadesc`, `description`, `created_at`, `updated_at`, `created_by`, `updated_by`, `status`) VALUES
+(1, 'Mẫu xe sang trọng', 'sang-trong', 'hinh1.jpg', 0, 5, 'dasfd', 'dasf', '', NULL, '2023-06-30 00:37:33', 1, 1, 1),
+(2, 'Mẫu xe thể thao', 'the-thao', 'hinh2.jpg', 0, 4, 'effe', 'wefwef', '', NULL, NULL, 1, NULL, 1),
+(3, 'Mẫu xe cổ điển', 'co-dien', 'hinh3.jpg', 0, 5, 'wefw', 'dasf', '', NULL, NULL, 1, NULL, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `db_config`
+--
+
+CREATE TABLE `db_config` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `author` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(255) NOT NULL,
+  `zalo` varchar(255) NOT NULL,
+  `facebook` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `youtube` varchar(255) NOT NULL,
+  `matedesc` varchar(255) NOT NULL,
+  `metakey` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `created_by` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  `updated_by` int(10) UNSIGNED DEFAULT NULL,
+  `status` tinyint(3) UNSIGNED NOT NULL DEFAULT 2
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -165,12 +191,12 @@ INSERT INTO `db_member` (`id`, `name`, `email`, `phone`, `gioitinh`, `username`,
 
 CREATE TABLE `db_menu` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `link` varchar(255) NOT NULL,
+  `name` varchar(1000) NOT NULL,
+  `link` varchar(1000) NOT NULL,
   `table_id` int(10) UNSIGNED NOT NULL DEFAULT 0,
   `parent_id` int(10) UNSIGNED NOT NULL DEFAULT 0,
   `position` varchar(255) NOT NULL,
-  `type` varchar(255) NOT NULL,
+  `type` varchar(100) NOT NULL,
   `sort_order` int(10) UNSIGNED NOT NULL DEFAULT 0,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -210,8 +236,10 @@ CREATE TABLE `db_order` (
   `name` varchar(255) NOT NULL,
   `phone` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `note` varchar(255) NOT NULL,
+  `address` varchar(1000) NOT NULL,
+  `gender` varchar(255) NOT NULL,
+  `created_by` int(11) UNSIGNED NOT NULL DEFAULT 1,
+  `note` varchar(1000) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `updated_by` int(10) UNSIGNED DEFAULT NULL,
@@ -230,6 +258,7 @@ CREATE TABLE `db_orderdetail` (
   `product_id` int(10) UNSIGNED NOT NULL,
   `price` double(8,2) NOT NULL,
   `qty` int(10) UNSIGNED NOT NULL,
+  `discount` double NOT NULL,
   `amount` double(8,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -242,12 +271,16 @@ CREATE TABLE `db_orderdetail` (
 CREATE TABLE `db_post` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `topic_id` int(10) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `slug` varchar(255) NOT NULL,
-  `detail` mediumtext NOT NULL,
+  `title` varchar(1000) NOT NULL,
+  `slug` varchar(1000) NOT NULL,
+  `detail` text NOT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `type` varchar(255) NOT NULL,
+  `description` varchar(1000) NOT NULL,
   `relay_id` int(10) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
+  `created_by` int(10) UNSIGNED NOT NULL DEFAULT 1,
   `updated_by` int(10) UNSIGNED DEFAULT NULL,
   `status` tinyint(3) UNSIGNED NOT NULL DEFAULT 2
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -256,10 +289,10 @@ CREATE TABLE `db_post` (
 -- Dumping data for table `db_post`
 --
 
-INSERT INTO `db_post` (`id`, `topic_id`, `title`, `slug`, `detail`, `relay_id`, `created_at`, `updated_at`, `updated_by`, `status`) VALUES
-(1, 0, 'Mẫu xe sang trọng', 'xe-sang-trong', 'vrssrr', 1, NULL, NULL, NULL, 1),
-(2, 0, 'Mẫu xe công suất lớn', 'xe-cong-suat-lon', 'sbvfvrr', 2, NULL, NULL, NULL, 1),
-(3, 0, 'Mẫu xe quý tộc', 'xe-quy-toc', 'sbvfvrr', 3, NULL, NULL, NULL, 1);
+INSERT INTO `db_post` (`id`, `topic_id`, `title`, `slug`, `detail`, `image`, `type`, `description`, `relay_id`, `created_at`, `updated_at`, `created_by`, `updated_by`, `status`) VALUES
+(1, 0, 'Mẫu xe sang trọng', 'xe-sang-trong', 'vrssrr', '', '', '', 1, NULL, NULL, 0, NULL, 1),
+(2, 0, 'Mẫu xe công suất lớn', 'xe-cong-suat-lon', 'sbvfvrr', '', '', '', 2, NULL, NULL, 0, NULL, 1),
+(3, 0, 'Mẫu xe quý tộc', 'xe-quy-toc', 'sbvfvrr', '', '', '', 3, NULL, NULL, 0, NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -289,6 +322,25 @@ INSERT INTO `db_postdetail` (`id`, `post_id`, `title`, `slug`, `detail`, `relay_
 (1, 1, 'Mẫu xe công suất lớn', 'mau-xe-cong-suat-lon', 'egg', 2, 0, NULL, NULL, NULL, 2),
 (2, 2, 'Mẫu xe sang trọng', 'mau-xe-sang-trong', 'eggdvz', 3, 0, NULL, NULL, NULL, 2),
 (3, 3, 'Mẫu xe nổi tiếng', 'mau-xe-noi-tieng', 'eggdvz', 3, 0, NULL, NULL, NULL, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `db_prodcutsale`
+--
+
+CREATE TABLE `db_prodcutsale` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `pricesale` int(11) NOT NULL,
+  `qty` int(11) NOT NULL,
+  `date_begin` int(11) NOT NULL,
+  `date_end` datetime NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `upadated_at` timestamp NULL DEFAULT NULL,
+  `created_by` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  `updated_by` int(10) UNSIGNED DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -340,6 +392,23 @@ INSERT INTO `db_product` (`id`, `category_id`, `brand_id`, `name`, `slug`, `pric
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `db_productstore`
+--
+
+CREATE TABLE `db_productstore` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `product_id` int(11) UNSIGNED NOT NULL,
+  `price` double NOT NULL,
+  `qty` int(11) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `created_by` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  `updated_by` int(10) UNSIGNED DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `db_singlepage`
 --
 
@@ -378,9 +447,10 @@ INSERT INTO `db_singlepage` (`id`, `name`, `link`, `slug`, `sort_order`, `create
 CREATE TABLE `db_slider` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,
-  `link` varchar(255) NOT NULL,
+  `link` varchar(1000) NOT NULL,
   `sort_order` int(10) UNSIGNED NOT NULL,
   `position` varchar(255) NOT NULL,
+  `description` varchar(1000) NOT NULL,
   `image` varchar(255) NOT NULL,
   `parent_id` int(10) UNSIGNED NOT NULL DEFAULT 0,
   `created_by` int(10) UNSIGNED NOT NULL DEFAULT 1,
@@ -394,12 +464,12 @@ CREATE TABLE `db_slider` (
 -- Dumping data for table `db_slider`
 --
 
-INSERT INTO `db_slider` (`id`, `name`, `link`, `sort_order`, `position`, `image`, `parent_id`, `created_by`, `created_at`, `updated_at`, `updated_by`, `status`) VALUES
-(1, 'xe1', 'xe-1', 0, 'slidershow', 'slider1.jpg', 0, 1, NULL, NULL, NULL, 1),
-(2, 'xe2', 'xe-2', 0, 'slidershow', 'slider2.jpg', 0, 1, NULL, NULL, NULL, 1),
-(3, 'xe3', 'xe-3', 0, 'slidershow', 'slider3.jpg', 0, 1, NULL, NULL, NULL, 1),
-(4, 'xe4', 'xe-4', 0, 'slidershow', 'slider4.png', 0, 1, NULL, NULL, NULL, 1),
-(5, 'xe5', 'xe-5', 0, 'slidershow', 'slider5.jpg', 0, 1, NULL, NULL, NULL, 1);
+INSERT INTO `db_slider` (`id`, `name`, `link`, `sort_order`, `position`, `description`, `image`, `parent_id`, `created_by`, `created_at`, `updated_at`, `updated_by`, `status`) VALUES
+(1, 'xe1', 'xe-1', 0, 'slidershow', '', 'slider1.jpg', 0, 1, NULL, NULL, NULL, 1),
+(2, 'xe2', 'xe-2', 0, 'slidershow', '', 'slider2.jpg', 0, 1, NULL, NULL, NULL, 1),
+(3, 'xe3', 'xe-3', 0, 'slidershow', '', 'slider3.jpg', 0, 1, NULL, NULL, NULL, 1),
+(4, 'xe4', 'xe-4', 0, 'slidershow', '', 'slider4.png', 0, 1, NULL, NULL, NULL, 1),
+(5, 'xe5', 'xe-5', 0, 'slidershow', '', 'slider5.jpg', 0, 1, NULL, NULL, NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -414,6 +484,8 @@ CREATE TABLE `db_topic` (
   `parent_id` int(10) UNSIGNED NOT NULL,
   `metakey` varchar(255) NOT NULL,
   `metadesc` varchar(255) NOT NULL,
+  `sort_order` int(10) UNSIGNED NOT NULL DEFAULT 0,
+  `description` varchar(1000) NOT NULL,
   `created_by` int(10) UNSIGNED NOT NULL DEFAULT 1,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -425,11 +497,11 @@ CREATE TABLE `db_topic` (
 -- Dumping data for table `db_topic`
 --
 
-INSERT INTO `db_topic` (`id`, `name`, `slug`, `parent_id`, `metakey`, `metadesc`, `created_by`, `created_at`, `updated_at`, `updated_by`, `status`) VALUES
-(1, 'detai1', 'de-tai-1', 0, 'tdjhgd', 'hghgd', 1, NULL, NULL, NULL, 1),
-(2, 'detai2', 'de-tai-2', 0, 'tdjhgd', 'hghgd', 1, NULL, NULL, NULL, 1),
-(3, 'detai3', 'de-tai-3', 0, 'tdjhgd', 'hghgd', 1, NULL, NULL, NULL, 1),
-(4, 'detai4', 'de-tai-4', 0, 'tdjhgd', 'hghgd', 1, NULL, NULL, NULL, 1);
+INSERT INTO `db_topic` (`id`, `name`, `slug`, `parent_id`, `metakey`, `metadesc`, `sort_order`, `description`, `created_by`, `created_at`, `updated_at`, `updated_by`, `status`) VALUES
+(1, 'detai1', 'de-tai-1', 0, 'tdjhgd', 'hghgd', 0, '', 1, NULL, NULL, NULL, 1),
+(2, 'detai2', 'de-tai-2', 0, 'tdjhgd', 'hghgd', 0, '', 1, NULL, NULL, NULL, 1),
+(3, 'detai3', 'de-tai-3', 0, 'tdjhgd', 'hghgd', 0, '', 1, NULL, NULL, NULL, 1),
+(4, 'detai4', 'de-tai-4', 0, 'tdjhgd', 'hghgd', 0, '', 1, NULL, NULL, NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -445,6 +517,7 @@ CREATE TABLE `db_user` (
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL,
+  `gender` varchar(255) NOT NULL,
   `image` varchar(255) DEFAULT NULL,
   `roles` varchar(255) NOT NULL,
   `created_by` int(10) UNSIGNED NOT NULL DEFAULT 1,
@@ -458,10 +531,10 @@ CREATE TABLE `db_user` (
 -- Dumping data for table `db_user`
 --
 
-INSERT INTO `db_user` (`id`, `name`, `email`, `phone`, `username`, `password`, `address`, `image`, `roles`, `created_by`, `created_at`, `updated_at`, `updated_by`, `status`) VALUES
-(1, 'Trịnh Công Sơn', 'trinhcongson@email.com', '09812122001', 'trinhcongson', '11122001', 'fvbssfvb', 'avt.jpg', 'tdjtt', 1, NULL, NULL, NULL, 1),
-(2, 'Nguyễn Thị Ngọc', 'trinhcongson@email.com', '09812122001', 'trinhcongson', '11122001', 'fvbssfvb', 'avt1.jpg', 'tdjtt', 1, NULL, NULL, NULL, 1),
-(3, 'Nguyễn Thị Lan', 'trinhcongson@email.com', '09812122001', 'trinhcongson', '11122001', 'fvbssfvb', 'avt2.jpg', 'tdjtt', 1, NULL, NULL, NULL, 1);
+INSERT INTO `db_user` (`id`, `name`, `email`, `phone`, `username`, `password`, `address`, `gender`, `image`, `roles`, `created_by`, `created_at`, `updated_at`, `updated_by`, `status`) VALUES
+(1, 'Trịnh Công Sơn', 'trinhcongson@email.com', '09812122001', 'trinhcongson', '11122001', 'fvbssfvb', '', 'avt.jpg', 'tdjtt', 1, NULL, NULL, NULL, 1),
+(2, 'Nguyễn Thị Ngọc', 'trinhcongson@email.com', '09812122001', 'trinhcongson', '11122001', 'fvbssfvb', '', 'avt1.jpg', 'tdjtt', 1, NULL, NULL, NULL, 1),
+(3, 'Nguyễn Thị Lan', 'trinhcongson@email.com', '09812122001', 'trinhcongson', '11122001', 'fvbssfvb', '', 'avt2.jpg', 'tdjtt', 1, NULL, NULL, NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -529,6 +602,12 @@ ALTER TABLE `db_category`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `db_config`
+--
+ALTER TABLE `db_config`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `db_contact`
 --
 ALTER TABLE `db_contact`
@@ -571,9 +650,21 @@ ALTER TABLE `db_postdetail`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `db_prodcutsale`
+--
+ALTER TABLE `db_prodcutsale`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `db_product`
 --
 ALTER TABLE `db_product`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `db_productstore`
+--
+ALTER TABLE `db_productstore`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -622,7 +713,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `db_brand`
 --
 ALTER TABLE `db_brand`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `db_category`
