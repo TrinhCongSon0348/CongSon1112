@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const initFormValue = {
     userName: "",
-    password: "",  
+    password: "",
 };
 const isEmptyValue = (value) => {
     return !value || value.trim().length < 1;
@@ -82,7 +83,9 @@ function Login() {
                     </div>
 
                     <button type="submit" className="submit-btn">
-                        Đăng Nhập
+                        <Link to="/" className="text-dark">
+                            Đăng Nhập
+                        </Link>
                     </button>
                 </form>
             </div>

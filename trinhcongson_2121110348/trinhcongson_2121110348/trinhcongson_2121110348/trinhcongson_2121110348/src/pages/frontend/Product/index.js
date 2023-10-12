@@ -23,7 +23,7 @@ function Product() {
                 </div>
                 <div className='row'>
                     <div className='col-12 text-center'>
-                        <button className="btn btn-seccess" onClick={() => setLimit(limit + 8)}>Xem them</button>
+                        <button className="btn btn-seccess" onClick={() => setLimit(limit + 8)}>Xem thêm</button>
                     </div>
                 </div>
 

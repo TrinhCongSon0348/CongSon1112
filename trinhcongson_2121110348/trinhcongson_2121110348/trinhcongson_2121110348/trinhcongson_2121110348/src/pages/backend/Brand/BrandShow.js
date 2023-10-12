@@ -35,12 +35,12 @@ function BrandShow() {
                     </div>
                     <div className="col-md-6 text-end">
                         <Link to="/admin/brand" className="btn btn-sm btn-success me-1">
-                            Ve danh sach</Link>
+                            Về danh sách</Link>
                     </div>
                     <Link to={"/admin/brand/update/"+brand.id} className="btn btn-sm btn-primary me-1">
-                        <FaEdit />Sua</Link>
+                        <FaEdit />Sửa</Link>
                     <button onClick={()=>BrandDelete(brand.id)} className="btn btn-sm btn-danger">
-                        <FaTrash />Xoa
+                        <FaTrash />Xóa
                     </button>
                 </div>
             </div>
@@ -48,8 +48,8 @@ function BrandShow() {
                 <table className="table table-bordered">
                     <thead>
                         <tr>
-                            <th style={{ width: 200 }}>Ten truong</th>
-                            <th>Gia tri</th>
+                            <th style={{ width: 200 }}>Tên trường</th>
+                            <th>Giá trị</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -58,7 +58,7 @@ function BrandShow() {
                             <td>{brand.id}</td>
                         </tr>
                         <tr>
-                            <th>Ten thuong hieu</th>
+                            <th>Tên thương hiêu</th>
                             <td>{brand.name}</td>
                         </tr>
                         <tr>
@@ -66,7 +66,7 @@ function BrandShow() {
                             <td>{brand.slug}</td>
                         </tr>
                         <tr>
-                            <th>Hinh</th>
+                            <th>Hình</th>
                             <td>
                                 {/* <img className="img-fluid" src={brand.image} alt="hinh" /> */}
                                 <img src={urlImage+"brand/"+brand.image} alt="Hinh"

@@ -1,5 +1,7 @@
 import { urlImage } from "../../config";
 import { Link } from "react-router-dom";
+// import { useState, useEffect } from "react";
+// import { products } from "../../datatest/products";
 
 function ProductItem(props) {
     return (
@@ -35,11 +37,12 @@ function ProductItem(props) {
                     </h3>
                 </div>
                 <div className="link-defail">
-                    <h3 className="text-danger fs-4">
-                        <button type="button" class="btn btn-cart" to="/gio-hang">
-                            <Link to={"/gio-hang"} className="text-white">
+                    <h3 className="text-white fs-4">
+                        <button type="button" class="btn btn-cart" >
+                            <Link to={"/gio-hang/" + props.product.id} className="text-white">
                                 Thêm Vào Giỏ
                             </Link>
+                            {/* onClick={() => onAddtoCartHandler(products.id)} */}
                         </button>
                     </h3>
                 </div>

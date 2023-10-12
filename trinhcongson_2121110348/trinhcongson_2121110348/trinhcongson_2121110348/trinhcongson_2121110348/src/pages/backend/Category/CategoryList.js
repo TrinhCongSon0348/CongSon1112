@@ -64,11 +64,11 @@ function CategoryList() {
                                     <td>{category.slug}</td>
                                     <td className="text-center">10/10/12</td>
                                     <td className="text-center">
-                                        <Link to={"/admin/category/show/"+category.id} className="btn btn-sm btn-success me-1">
+                                        <Link to={"/admin/category/show/"+category.id} className="btn btn-sm btn-success me-1 bg-success">
                                             <FaRegEye /></Link>
-                                        <Link to={"/admin/category/update/"+category.id} className="btn btn-sm btn-primary me-1">
+                                        <Link to={"/admin/category/update/"+category.id} className="btn btn-sm btn-primary me-1 bg-primary">
                                             <FaEdit />Thêm</Link>
-                                        <button onClick={()=>CategoryDelete(category.id)} className="btn btn-sm btn-danger">
+                                        <button onClick={()=>CategoryDelete(category.id)} className="btn btn-sm btn-danger bg-danger">
                                             <FaTrash />Xoa
                                         </button>
                                     </td>

@@ -51,14 +51,14 @@ function BrandCreate(){
                 <div className="card-header">
                     <div className="row">
                         <div className="col-md-6">
-                            <strong className="text-danger">THEM THUONG HIEU</strong>
+                            <strong className="text-danger">THÊM THƯƠNG HIỆU</strong>
                         </div>
                         <div className="col-6 text-end">
                             <Link to="/admin/brand" className="btn btn-sm btn-success me-1">
-                                <FaPlus />Ve danh sach</Link>
+                                <FaPlus />Về danh sách</Link>
                         </div>
                         <button type="submit" className="btn btn-sm btn-success">
-                            Luu
+                            Lưu
                         </button>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ function BrandCreate(){
                         <div className="col-md-9">
                             <div className="mb-3">
                                 <label>
-                                    <strong>Ten thuong hieu(*)</strong>
+                                    <strong>Tên thương hiệu(*)</strong>
                                 </label>
                                 <input
                                     value={name}
@@ -78,7 +78,7 @@ function BrandCreate(){
                             </div>
                             <div className="mb-3">
                                 <label>
-                                    <strong>Tu khoa(*)</strong>
+                                    <strong>Từ khóa(*)</strong>
                                 </label>
                                 <textarea
                                     value={metakey}
@@ -88,7 +88,7 @@ function BrandCreate(){
                             </div>
                             <div className="mb-3">
                                 <label>
-                                    <strong>Mo ta(*)</strong>
+                                    <strong>Mô tả(*)</strong>
                                 </label>
                                 <textarea
                                     value={metadesc}
@@ -99,7 +99,7 @@ function BrandCreate(){
                             <div className="col-md-3">
                                 <div className="mb-3">
                                     <label>
-                                        <strong>Sap xep</strong>
+                                        <strong>Sắp xếp</strong>
                                     </label>
                                     <select value={sort_order} onChange={(e) => setSortOrder(e.target.value)}
                                         className="form-control">
@@ -111,18 +111,18 @@ function BrandCreate(){
                                 </div>
                                 <div className="mb-3">
                                     <label>
-                                        <strong>Hinh</strong>
+                                        <strong>Hình</strong>
                                     </label>
                                     <input id="image" className="form-control" type="file" />
                                 </div>
                                 <div className="mb-3">
                                     <label>
-                                        <strong>Trang thai</strong>
+                                        <strong>Trạng thái</strong>
                                     </label>
                                     <select value={status} onChange={(e) => setStatus(e.target.value)}
                                         className="form-control">
-                                        <option value="1">Xuat ban</option>
-                                        <option value="2">Chua xuat ban</option>
+                                        <option value="1">Xuất bản</option>
+                                        <option value="2">Chưa xuất bản</option>
                                     </select>
                                 </div>
                             </div>

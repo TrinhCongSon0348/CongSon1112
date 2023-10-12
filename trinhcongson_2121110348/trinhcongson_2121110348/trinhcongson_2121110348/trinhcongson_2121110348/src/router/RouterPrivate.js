@@ -47,7 +47,6 @@ import MemberList from '../pages/backend/Member/MemberList';
 import MemberCreate from '../pages/backend/Member/MemberCreate';
 import MemberUpdate from '../pages/backend/Member/MemberUpdate';
 import MemberShow from '../pages/backend/Member/MemberShow';
-// import Cart from '../layouts/layoutSite/Cart';
 
 
 const RouterPrivate=[

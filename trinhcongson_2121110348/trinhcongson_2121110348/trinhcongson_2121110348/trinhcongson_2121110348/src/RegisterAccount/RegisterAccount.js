@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./RegisterAccount.css";
+import { Link } from "react-router-dom";
 
 const initFormValue = {
     firstName: "",
@@ -153,7 +154,9 @@ function RegisterAccount() {
                     </div>
 
                     <button type="submit" className="submit-btn">
-                        Đăng Ký
+                        <Link to="/" className="text-dark">
+                            Đăng Ký
+                        </Link>
                     </button>
                 </form>
             </div>

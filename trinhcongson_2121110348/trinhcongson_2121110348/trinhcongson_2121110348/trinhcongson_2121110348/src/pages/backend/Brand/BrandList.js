@@ -64,12 +64,12 @@ function BrandList() {
                                     <td>{brand.slug}</td>
                                     <td className="text-center">10/10/12</td>
                                     <td className="text-center">
-                                        <Link to={"/admin/brand/show/"+brand.id} className="btn btn-sm btn-success me-1">
+                                        <Link to={"/admin/brand/show/"+brand.id} className="btn btn-sm btn-success me-1 bg-success">
                                             <FaRegEye /></Link>
-                                        <Link to={"/admin/brand/update/"+brand.id} className="btn btn-sm btn-primary me-1">
+                                        <Link to={"/admin/brand/update/"+brand.id} className="btn btn-sm btn-primary me-1 bg-primary">
                                             <FaEdit />Thêm</Link>
-                                        <button onClick={()=>BrandDelete(brand.id)} className="btn btn-sm btn-danger">
-                                            <FaTrash />Xoa
+                                        <button onClick={()=>BrandDelete(brand.id)} className="btn btn-sm btn-danger bg-danger">
+                                            <FaTrash />Xóa
                                         </button>
                                     </td>
                                     <td className="text-center">{brand.id}</td>

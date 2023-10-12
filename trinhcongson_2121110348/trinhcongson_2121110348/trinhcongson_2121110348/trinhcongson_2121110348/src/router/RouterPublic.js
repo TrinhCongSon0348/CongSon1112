@@ -25,7 +25,7 @@ const RouterPublic=[
     {path:"/danh-muc-san-pham/:slug", component:ProductCategory},
     {path:"/thuong-hieu/:slug", component:ProductBrand},
     {path:"/lien-he",component:Contact},
-    {path:"/gio-hang",component:GioHang},
+    {path:"/gio-hang/:id",component:GioHang},
     {path:"/dang-ky",component:DangKyTaiKhoan},
     {path:"/dang-nhap",component:DangNhap}
 
